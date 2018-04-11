@@ -1,0 +1,29 @@
+{
+    "name": "hotrush/stealer-scrapoxy-client",
+    "type": "metapackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rush",
+            "email": "johny64@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "hotrush/stealer": "dev-master",
+        "hotrush/scrapoxy-react-client": "^1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hotrush\\StealerScrapoxy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hotrush\\StealerScrapoxy\\Tests\\": "tests/"
+        }
+    }
+}

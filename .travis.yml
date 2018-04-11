@@ -1,0 +1,23 @@
+language: php
+sudo: false
+
+## Cache composer bits
+cache:
+  directories:
+    - vendor
+    - $HOME/.composer/cache
+
+## PHP versions we test against
+php:
+  - 7.1
+  - 7.2
+  - nightly
+
+## Update composer and run the appropriate composer command
+install:
+  # Install composer packages, will also trigger dump-autoload
+  - composer install --no-interaction
+
+# Testing the app (see phpunit.xml), generating Code Coverage report
+script:
+  - ./vendor/bin/phpunit
