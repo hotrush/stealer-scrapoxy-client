@@ -66,7 +66,7 @@ class Client extends AbstractClient
         return $this->scrapoxyClient;
     }
 
-    public function start()
+    public function start(): void
     {
         parent::start();
 
@@ -95,7 +95,7 @@ class Client extends AbstractClient
         }
     }
 
-    public function stop()
+    public function stop(): void
     {
         parent::stop();
 
@@ -127,7 +127,7 @@ class Client extends AbstractClient
     /**
      * @return bool
      */
-    public function isReady()
+    public function isReady(): bool
     {
         return $this->scrapoxyScaled;
     }
@@ -135,7 +135,7 @@ class Client extends AbstractClient
     /**
      * @return bool
      */
-    public function isStopped()
+    public function isStopped(): bool
     {
         return !$this->waiting && !$this->scrapoxyScaled;
     }

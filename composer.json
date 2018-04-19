@@ -1,6 +1,6 @@
 {
     "name": "hotrush/stealer-scrapoxy-client",
-    "type": "metapackage",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
