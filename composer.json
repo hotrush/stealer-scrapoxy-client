@@ -9,8 +9,8 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
-        "hotrush/stealer": "dev-master",
+        "php": ">=7.1",
+        "hotrush/stealer": "^0.1",
         "hotrush/scrapoxy-react-client": "^1.1"
     },
     "require-dev": {
